@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard1.6;netstandard2.0;net45</TargetFrameworks>
+    <NetStandardImplicitPackageVersion Condition=" '$(TargetFramework)' == 'netstandard1.6' ">1.6.0</NetStandardImplicitPackageVersion>
+    <NetStandardImplicitPackageVersion Condition=" '$(TargetFramework)' == 'netstandard2.0' OR '$(TargetFramework)' == 'net45' ">2.0.0</NetStandardImplicitPackageVersion>
+    <RootNamespace>BAMCIS.Parallel.Interleaved</RootNamespace>
+    <AssemblyName>Interleaved</AssemblyName>
+    <PackageId>BAMCIS.Parallel.Interleaved</PackageId>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Authors>Michael Haken</Authors>
+    <Company>bamcis.io</Company>
+    <Product>Interleaved Task Processing</Product>
+    <Description>Provides an extension method to process an IEnumerable of Tasks as each task completes in order.</Description>
+    <Copyright>bamcis.io</Copyright>
+    <RepositoryType>Git</RepositoryType>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/bamcis-io/Interleaved/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/bamcis-io/Interleaved</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/bamcis-io/Interleaved</RepositoryUrl>
+    <PackageReleaseNotes>Initial Release.</PackageReleaseNotes>
+    <Version>1.0.0</Version>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <PackageTags>Interleaved Parallel</PackageTags>
+    <FileVersion>1.0.0.0</FileVersion>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Interleaved.snk</AssemblyOriginatorKeyFile>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+
+</Project>
